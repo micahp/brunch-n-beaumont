@@ -1,0 +1,136 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+}
+
+/* @media (min-width: 768px) {
+  .smallerWidthRSVP {
+    display: none;
+  }
+} */
+
+@media (max-width: 1024px) {
+  #opportunities {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #opportunities > div {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #event-info {
+    height: fit-content;
+  }
+
+  .event-info-text {
+    margin-top: 100px;
+  }
+
+  /* .largerWidthRSVP {
+    display: none;
+  } */
+}
+
+@media (max-width: 640px) {
+  .tagline {
+    height: 50px;
+    width: 500px;
+  }
+}
+
+#sign-up::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,.6);
+}
+
+.text-block {
+  height: 100px;
+  width: auto;
+}
+
+.bgImage {
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bgImage::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 0.5rem;
+}
+
+.bgOrange {
+    background-color: orange;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#header {
+    background-color: #017270;
+}
+
+.h-fit {
+    height: fit-content;
+}
+
+/* Custom background color matching your mockup */
+.bg-customColor {
+    background-color: #EF4444; /* Replace #yourColor with the actual color from the mockup */
+  }
+  
+  /* Responsive image sizes using TailwindCSS classes */
+  @media (min-width: 768px) {
+    .event-info-text-wrapper {
+      margin-bottom: 150px;
+    }
+
+    .tagline-image {
+      max-height: 120px; /* Adjust as per mockup for medium screens */
+    }
+  
+    .flower-image {
+      max-height: 200px; /* Adjust as per mockup for medium screens */
+    }
+  
+    .cutout-pic {
+      max-height: 600px; /* Adjust as per mockup for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .tagline-image {
+      max-height: 140px; /* Adjust as per mockup for large screens */
+    }
+  
+    .flower-image {
+      max-height: 250px; /* Adjust as per mockup for large screens */
+    }
+  
+    .cutout-pic {
+      max-height: 700px; /* Adjust as per mockup for large screens */
+    }
+  }
+  
